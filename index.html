@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt/br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gasolina</title>
+    <style>
+        body {
+            font: normal 25pt Comic;
+            background-color: black;  
+            color: rgb(145, 255, 0)
+        }
+        h1 {
+            color: rgb(251, 255, 0);
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Preço da Gasolina gasto</h1>
+    <script>
+
+        var consumo = Number(window.prompt('Quanto o seu automovel consome ?'))
+        var gasolina = Number(window.prompt('Qual o valor atualmente do combústivel?'))
+        var distancia = Number(window.prompt('Qual a distância a ser percorrida em km ?'))
+        var total1 = Number((distancia)/consumo)
+        var total2 = Number((total1*gasolina))
+        var reais = total2.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
+        var s     = ((distancia)/80)
+        document.writeln (`O consumo do seu combustivel com uma distância de ${distancia}km é ${reais}`)
+        document.writeln(`<br> Levará um tempo médio de ${s} hrs`)
+    
+    </script>
+    
+</body>
+</html>
