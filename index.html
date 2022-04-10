@@ -19,18 +19,18 @@
 </head>
 <body>
     <h1>Preço da Gasolina gasto</h1>
-    <img src="imagens/1.png"style="left: 250px; top: 300px; position: absolute" width="175" height="175">
+    <img src="imagens/1.png"style="left: 120px; top: 520px; position: absolute" width="110" height="110">
     <script>
 
         var consumo = Number(window.prompt('Quanto o seu automovel consome ?'))
-        var gasolina = Number(window.prompt('Qual o valor atualmente do combústivel? Obs: Digite . no lugar de virgula'))
+        var gasolina = Number(window.prompt('Qual o valor atualmente do combústivel? Digite . no lugar a virgula'))
         var distancia = Number(window.prompt('Qual a distância a ser percorrida em km ?'))
         var total1 = Number((distancia)/consumo)
         var total2 = Number((total1*gasolina))
         var reais = total2.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
         var s     = ((distancia)/80)
         document.writeln (`O consumo do seu combustivel com uma distância de ${distancia}km é ${reais}`)
-        document.writeln(`<br> Levará um tempo médio de ${s} hrs`)
+        document.writeln(`<br> e Levará um tempo médio de ${s} hrs`)
     
     </script>
     
